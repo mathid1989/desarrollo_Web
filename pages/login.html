@@ -1,0 +1,167 @@
+<!DOCTYPE html> <!--Tipo de documento-->
+<html lang = "es"> <!--Etiqueta inicial de HTML-->
+<head>
+    <link rel="stylesheet" href="../css/bootstrap.css"/>
+    <link rel="stylesheet" href="../css/archivo.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Duru+Sans&display=swap" rel="stylesheet">  
+    <title>Milo Papeleria</title>
+</head>
+<body>
+    <header>
+        <div>
+            <h1>Milo Papeleria</h1>    
+        </div>
+        <div class="menuInicial">
+            <div id = "logo">
+                <a href="../index.html"><img src="../img/milo_Logo.png" alt="Logo Milo Papeleria"></a> 
+            </div>
+            <div>
+                <input type="barra"  name="barra" class = "barra">
+                <input type="submit" value="Buscar" class = "botonBusqueda">
+            </div>
+            <div id="loginCarrito">
+                <a href="login.html" class="btn btn-primary btn-lg active btn-sm" role="button" aria-pressed="true">Login</a>
+                <a href="login.html" class="btn btn-secondary btn-lg active btn-sm" role="button" aria-pressed="true">Registro</a>
+                <a href ="" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="../img/carrito.png" alt="Carrito de compra"></a>
+            </div>
+        </div>
+    </header>   
+    <nav class = "colorNav">
+        <ul> <!--Menu de secciones-->
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="papeleria.html">Papeleria</a>
+                    <ul>
+                        <li><a href="">Hojas</a></li>
+                        <li><a href="">Lapiceras</a></li>
+                        <li><a href="">Marcadores</a></li>
+                    </ul>
+                </li>
+            <li><a href="juguetes.html">Juguetes</a>
+                <ul>
+                    <li><a href="">Niños</a></li>
+                    <li><a href="">Niñas</a></li>
+                    <li><a href="">Bebes</a></li>
+                </ul>
+            </li>    
+            <li><a href="juegosDeMesa.html">Juegos de mesa</a>
+                <ul>
+                    <li><a href="">Estrategia</a></li>
+                    <li><a href="">Familiares</a></li>
+                    <li><a href="">Cooperativos</a></li>
+                </ul>
+            </li>
+            <li><a href="oficina.html">Oficina</a>
+                <ul>
+                    <li><a href="">Sillas</a></li>
+                    <li><a href="">Lamparas</a></li>
+                    <li><a href="">Organizadores</a></li>
+                </ul>
+            </li>
+            <li><a href="tecnologia.html">Tecnologia</a>
+                <ul>
+                    <li><a href="">Computacion</a></li>
+                    <li><a href="">VideoJuegos</a></li>
+                    <li><a href="">Gadgets</a></li>
+                </ul>
+            </li>    
+            <li><a href="lecturaOnline.html">Lectura onLine</a></li>
+        </ul>
+    </nav>
+        <main>
+            <!--Inicio del Carrousel-->
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="../img/papeleria.jpg" class="d-block w-100" alt="papeleria">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="../img/juguetes.JPG" class="d-block w-100" alt="juguetes">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="../img/mochila.JPG" class="d-block w-100" alt="mochila">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+              <!--Fin del Carrousel-->
+            <section class = "grid-container"> 
+                <article class = "grid">  
+                    <div class = "login">
+                        <form action="" class ="logueo" class = "googleFonts"> <!--Cuadro de Login-->
+                            <fieldset>
+                                <legend> Login </legend>
+                                <label for="correo"> Email: </label>
+                                <input type="email"  name="correo"> <br>
+                                <label for="clave"> Contraseña: </label>
+                                <input type="password" name="clave"> <br>
+                                <input type="submit" value="Enviar">
+                                <input type="button" value="Resetar password">
+                            </fieldset>
+                        </form> 
+                    </div>
+                </article>
+                <article  class = "grid">
+                    <div class = "registro" >
+                        <form action="" class ="logueo" class = "googleFonts"> <!--Cuadro de Registro-->
+                            <fieldset>
+                                <legend> Registro </legend>
+                                <label for="correo"> Email: </label>
+                                <input type="email"  name="correo"> <br>
+                                <label for="clave"> Contraseña: </label>
+                                <input type="password" name="clave"> <br>
+                                <label for="clave"> Confirmacion: </label>
+                                <input type="password" name="clave"> <br>
+                                <input type="submit" value="Enviar">
+                                <input type="button" value="Resetar password">
+                            </fieldset>
+                        </form> 
+                    </div>
+                </article>
+                
+            </section>
+        </main>
+        <footer> <!--Footer con los locales, contacto, redes sociales y el bot automatico-->
+            <div>
+                <a href=""><img src="../img/whatsapp-24.png" alt="Whatsapp"></a>
+                <a href=""><img src="../img/facebook-24.png" alt="Facebook"></a>
+                <a href=""><img src="../img/instagram-24.png" alt="Instagram"></a>
+            </div>
+            <div>
+                <a href="contacto.html" class="btn btn-primary btn-lg active btn-sm" role="button" aria-pressed="true">Contacto</a>
+            </div>
+            <div>
+                <div>
+                    <button type="button" class="btn btn-danger btn-sm" id="liveToastBtn">Chat online</button>
+                </div>
+                <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+                    <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                        <div class="toast-header">
+                        <img src="/img/milo_32x32.png" class="rounded me-2" alt="...">
+                        <strong class="me-auto">Chat automatico</strong>
+                        <small>11 mins ago</small>
+                        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                    </div>
+                    <div class="toast-body">Hola buenas tardes, ingrese su mensaje y sera respondido a la brevedad</div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="../js/bootstrap.js"></script>
+</body>    
+</html>
