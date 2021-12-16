@@ -1,0 +1,284 @@
+/*Varialbles*/
+/*Se formatea el h1*/
+h1 {
+  color: snow;
+  text-align: center;
+  background-image: linear-gradient(to right, black, #98c1d9);
+  font-family: "Duru Sans", sans-serif;
+  font-size: 18px;
+  animation-duration: 4s;
+  animation-name: aparecer; }
+
+a {
+  text-decoration: none; }
+
+/*Se le agrega color al menu*/
+.menu {
+  margin: auto;
+  text-align: center;
+  list-style-type: none;
+  padding: 0;
+  background: #353839;
+  font-family: "Duru Sans", sans-serif;
+  font-size: 20px;
+  color: snow; }
+
+/*Se le agrega color a las letras y a algunos fondos*/
+.fondo {
+  text-align: center;
+  background: #98c1d9;
+  font-family: "Duru Sans", sans-serif; }
+
+/*Se le agrega color a las letras y al fondo del logueo*/
+.logueo {
+  background: #98c1d9;
+  font-family: "Duru Sans", sans-serif; }
+
+/*Se redondean las imagenes de los productos*/
+.img {
+  border-radius: 4px;
+  transition: 2s; }
+
+.img:hover {
+  border-radius: 4px;
+  transform: scale(1.1, 1.1); }
+
+/*Se le da fondo y formato a la google font descargada*/
+.googleFonts {
+  background-color: #98c1d9;
+  font-family: "Duru Sans", sans-serif;
+  text-align: center;
+  font-size: 18px; }
+
+.negritaCursiva {
+  font-style: italic;
+  font-weight: bold;
+  font-family: 'Duru Sans', sans-serif; }
+
+/*Menu navegacion*/
+.colorNav {
+  background-image: linear-gradient(to right, black, #98c1d9); }
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  z-index: 10; }
+
+nav ul li {
+  list-style-type: none;
+  background-color: #d7dddf;
+  padding: 10px;
+  margin: 10px;
+  font-family: 'Duru Sans', sans-serif;
+  border-radius: 10px;
+  font-size: 16px;
+  flex-direction: column;
+  font-weight: bold; }
+
+nav ul li:hover {
+  list-style-type: none;
+  background-color: #FBF46D;
+  padding: 10px;
+  margin: 10px;
+  font-family: 'Duru Sans', sans-serif;
+  border-radius: 10px;
+  font-size: 16px;
+  flex-direction: column;
+  font-weight: bold; }
+
+nav ul ul {
+  display: none;
+  border-radius: 10px; }
+
+nav ul li:hover ul {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  margin-top: 5px;
+  margin-left: -55px; }
+
+nav li {
+  border: 1px;
+  border-style: groove; }
+
+article div {
+  margin-top: -10px;
+  margin-bottom: 10px; }
+
+.barra {
+  width: 400px;
+  border-radius: 10px;
+  height: 4vh;
+  transition: height 2s; }
+
+.barra:focus {
+  width: 600px;
+  border-radius: 10px;
+  height: 6vh;
+  font-size: 24px; }
+
+.botonBusqueda {
+  width: 100px;
+  border-radius: 10px;
+  height: 5vh; }
+
+.menuInicial {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 12vh; }
+
+#loginCarrito {
+  font-family: "Duru Sans", sans-serif;
+  font-weight: bold; }
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  font-family: "Duru Sans", sans-serif;
+  background-image: linear-gradient(to right, black, #98c1d9);
+  font-weight: bold;
+  animation-duration: 4s;
+  animation-name: aparecer; }
+
+header {
+  background-color: #98c1d9; }
+
+#logo {
+  transition: 2s; }
+
+#logo:hover {
+  transform: translate(20px); }
+
+#contacto {
+  list-style-type: none;
+  background-color: #d7dddf;
+  margin-left: 10px;
+  border-radius: 4px;
+  font-family: "Duru Sans", sans-serif; }
+
+#contacto:hover {
+  list-style-type: none;
+  background-color: #FBF46D;
+  margin-left: 10px;
+  border-radius: 4px;
+  font-family: "Duru Sans", sans-serif; }
+
+/*Grid*/
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; }
+
+.grid {
+  display: grid;
+  grid-template-areas: "local local" "contacto contacto" "login login" "registro registro";
+  grid-template-columns: 1fr 1fr;
+  background-color: #98c1d9; }
+
+.gridMain {
+  display: grid;
+  grid-template-areas: "leyenda leyenda" "imagen newsLetter";
+  grid-template-columns: 1fr 1fr;
+  align-self: start;
+  background-color: #98c1d9; }
+
+.imagen {
+  grid-area: imagen;
+  justify-self: center; }
+
+.newsLetter {
+  grid-area: newsLetter;
+  justify-self: center; }
+
+.leyenda {
+  grid-area: leyenda;
+  justify-self: center;
+  background-color: #98c1d9;
+  font-family: "Duru Sans", sans-serif;
+  text-align: justify;
+  font-size: 18px;
+  padding: 5px;
+  margin: 5px; }
+
+.local {
+  grid-area: local;
+  justify-self: center;
+  font-family: "Duru Sans", sans-serif;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 5px; }
+
+.formContacto {
+  grid-area: contacto;
+  justify-self: center;
+  margin-top: 10px; }
+
+.login {
+  grid-area: login;
+  justify-self: center;
+  margin-top: 10px; }
+
+.registro {
+  grid-area: registro;
+  justify-self: center;
+  margin-top: 10px; }
+
+/*Media*/
+@media (max-width: 599px) {
+  nav ul {
+    display: flex;
+    flex-direction: column; }
+  .barra {
+    width: 200px; }
+  .grid-container {
+    grid-template-columns: 1fr; }
+  .grid {
+    display: grid;
+    grid-template-areas: "local" "contacto" "login" "registro";
+    grid-template-columns: 1fr;
+    align-self: start; }
+  .gridMain {
+    display: grid;
+    grid-template-areas: "leyenda" "imagen" "newsLetter";
+    grid-template-columns: 1fr;
+    align-self: start; } }
+
+@media (min-width: 600px) and (max-width: 768px) {
+  nav ul {
+    display: flex;
+    flex-direction: column; }
+  .grid-container {
+    grid-template-columns: 1fr; }
+  .grid {
+    display: grid;
+    grid-template-areas: "local" "contacto" "login" "registro";
+    grid-template-columns: 1fr;
+    align-self: start; }
+  .gridMain {
+    display: grid;
+    grid-template-areas: "leyenda" "imagen" "newsLetter";
+    grid-template-columns: 1fr;
+    align-self: start; } }
+
+@media (min-width: 769px) and (max-width: 1023px) {
+  .grid-container {
+    grid-template-columns: 1fr; }
+  .grid {
+    display: grid;
+    grid-template-areas: "local" "contacto" "login" "registro";
+    grid-template-columns: 1fr;
+    align-self: start; }
+  .gridMain {
+    display: grid;
+    grid-template-areas: "leyenda" "imagen" "newsLetter";
+    grid-template-columns: 1fr;
+    align-self: start; } }
+
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: translate(-500px); }
+  to {
+    opacity: 1; } }

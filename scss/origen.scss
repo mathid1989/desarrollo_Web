@@ -1,10 +1,17 @@
+/*Varialbles*/
+$colorSnow: snow;
+$colorMenu: #353839;
+$colorFondo: #98c1d9;
+$colorNavUl: #d7dddf;
+$colorResaltado:#FBF46D;
+$texto: 'Duru Sans', sans-serif;
 
-/*Se le agrega color a las letras y al fondo del h1*/
+/*Se formatea el h1*/
 h1 {
-    color: snow;
+    color: $colorSnow;
     text-align: center;
     background-image: linear-gradient(to right, black, #98c1d9);
-    font-family: 'Duru Sans', sans-serif;
+    font-family: $texto;
     font-size: 18px;
     animation-duration: 4s;
     animation-name: aparecer;
@@ -13,30 +20,29 @@ h1 {
 a{
     text-decoration: none;
 }
-
 /*Se le agrega color al menu*/
 .menu {
     margin: auto;
     text-align: center;
     list-style-type: none;
     padding: 0;
-    background:#353839;
-    font-family: 'Duru Sans', sans-serif;
+    background:$colorMenu;
+    font-family: $texto;
     font-size: 20px;
-    color: snow;
+    color:$colorSnow;
 }
 
 /*Se le agrega color a las letras y a algunos fondos*/
 .fondo{
     text-align: center;
-    background: #98c1d9;
-    font-family: 'Duru Sans', sans-serif;
+    background: $colorFondo;
+    font-family: $texto;
 }
 
 /*Se le agrega color a las letras y al fondo del logueo*/
 .logueo{
-    background: #98c1d9;
-    font-family: 'Duru Sans', sans-serif;
+    background: $colorFondo;
+    font-family: $texto;
 }
 
 /*Se redondean las imagenes de los productos*/
@@ -50,76 +56,73 @@ a{
     transform: scale(1.1, 1.1);
   }
 
-/*Se le da formato a la google font descargada*/  
+  /*Se le da fondo y formato a la google font descargada*/
+.googleFonts{
+    background-color:$colorFondo;
+    font-family: $texto;
+    text-align: center;
+    font-size: 18px;
+}
+
 .negritaCursiva{
     font-style: italic;
     font-weight: bold;
     font-family: 'Duru Sans', sans-serif;
 }
 
-/*Se le da fondo y formato a la google font descargada*/
-.googleFonts{
-    background-color:#98c1d9;
-    font-family: 'Duru Sans', sans-serif;
-    text-align: center;
-    font-size: 18px;
-}
-
-/*Se transforma el texto indicado*/
-.transformarTexto{
-    text-transform: uppercase;
-    letter-spacing: 5px;
-}
-
-/*Se modifica la tabla*/
-.olLatino{
-   list-style-type: upper-latin; 
-   font-family: 'Duru Sans', sans-serif;
-}
-
-/*Se le da formato a la otra parte de la tabla*/
-.googleFontsLetra {
-    font-family: 'Duru Sans', sans-serif;
-    text-align: justify;
-}
-
+/*Menu navegacion*/
 .colorNav{
-    background-image: linear-gradient(to right, black, #98c1d9);;
+    background-image: linear-gradient(to right, black, #98c1d9);
 }
 
-nav ul{
-    display: flex;
-    justify-content: space-around;
-    position: relative;
-    z-index:10;
-}
+nav{
+    ul{
+        display: flex;
+        justify-content: space-around;
+        position: relative;
+        z-index:10;
+    }
+} 
 
-nav ul li{
-    list-style-type: none;
-    background-color:#d7dddf;
-    padding: 10px;
-    margin: 10px;
-    font-family: 'Duru Sans', sans-serif;
-    border-radius: 10px;
-    font-size: 16px;
-    flex-direction: column;
-    font-weight: bold;
-}
+nav{
+    ul {
+        li{
+            list-style-type: none;
+            background-color:$colorNavUl;
+            padding: 10px;
+            margin: 10px;
+            font-family: 'Duru Sans', sans-serif;
+            border-radius: 10px;
+            font-size: 16px;
+            flex-direction: column;
+            font-weight: bold;
+        }    
+    }
+} 
+ 
 
-nav ul li:hover{
-    list-style-type: none;
-    background-color:#FBF46D;
-    padding: 10px;
-    margin: 10px;
-    font-family: 'Duru Sans', sans-serif;
-    border-radius: 10px;
-    font-size: 16px;
-    flex-direction: column;
-    font-weight: bold;
+nav{
+    ul {
+        li:hover{
+            list-style-type: none;
+            background-color:$colorResaltado;
+            padding: 10px;
+            margin: 10px;
+            font-family: 'Duru Sans', sans-serif;
+            border-radius: 10px;
+            font-size: 16px;
+            flex-direction: column;
+            font-weight: bold;
+    }
+} 
 }
-nav ul ul{
-    display: none;
-    border-radius: 10px;
+nav{
+    ul{
+        ul{
+            display: none;
+            border-radius: 10px;
+    }
+}
 }
 
 nav ul li:hover ul{
@@ -130,90 +133,92 @@ nav ul li:hover ul{
     margin-left: -55px; 
 }
 
-nav li{
-    border: 1px;
-    border-style: groove;
-    
+nav{
+    li{
+        border: 1px;
+        border-style: groove;
+    }
 }
 
-article div{
-    margin-top:-10px;
-    margin-bottom: 10px;
+article {
+    div{
+        margin-top:-10px;
+        margin-bottom: 10px;
+    }
 }
 
 .barra{
-width: 400px;
-border-radius: 10px;
-height: 4vh;
-transition: height 2s;  
-}
-
-.barra:focus{
-    width: 600px;
+    width: 400px;
     border-radius: 10px;
-    height: 6vh;
-    font-size: 24px; 
+    height: 4vh;
+    transition: height 2s;  
+    }
+    
+    .barra:focus{
+        width: 600px;
+        border-radius: 10px;
+        height: 6vh;
+        font-size: 24px; 
+        }
+    
+    .botonBusqueda{
+        width:100px;
+        border-radius: 10px;
+        height: 5vh;     
     }
 
-.botonBusqueda{
-    width:100px;
-    border-radius: 10px;
-    height: 5vh;
-      
-}
+    .menuInicial{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 12vh;
+    }
+    
+    #loginCarrito{
+        font-family: $texto;
+        font-weight: bold;
+    }
+    
+    footer{
+        display: flex;
+        justify-content: space-between;
+        font-size: 18px;
+        font-family: $texto;
+        background-image: linear-gradient(to right, black, #98c1d9);
+        font-weight: bold;
+        animation-duration: 4s;
+        animation-name: aparecer;
+    }
+    
+    header{
+        background-color:$colorFondo;
+    }
+    
+    #logo{
+        transition: 2s;
+    }
+    
+    #logo:hover{
+        transform: translate(20px);
+    }
+    
+    #contacto{
+        list-style-type: none;
+        background-color:$colorNavUl;
+        margin-left: 10px;
+        border-radius: 4px;
+        font-family: $texto;
+    }
+    
+    #contacto:hover{
+        list-style-type: none;
+        background-color:$colorResaltado;
+        margin-left: 10px;
+        border-radius: 4px;
+        font-family: $texto;
+    }
 
-.menuInicial{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    height: 12vh;
-}
-
-#loginCarrito{
-    font-family: 'Duru Sans', sans-serif;
-    font-weight: bold;
-}
-
-footer{
-    display: flex;
-    justify-content: space-between;
-    font-size: 18px;
-    font-family: 'Duru Sans', sans-serif;
-    background-image: linear-gradient(to right, black, #98c1d9);
-    font-weight: bold;
-    animation-duration: 4s;
-    animation-name: aparecer;
-}
-
-header{
-    background-color: #98c1d9;
-}
-
-#logo{
-    transition: 2s;
-}
-
-#logo:hover{
-    transform: translate(20px);
-}
-
-#contacto{
-    list-style-type: none;
-    background-color:#d7dddf;
-    margin-left: 10px;
-    border-radius: 4px;
-    font-family: 'Duru Sans', sans-serif;
-}
-
-#contacto:hover{
-    list-style-type: none;
-    background-color:#FBF46D;
-    margin-left: 10px;
-    border-radius: 4px;
-    font-family: 'Duru Sans', sans-serif;
-}
-
-/*Grid*/
+    /*Grid*/
 
 .grid-container{
     display: grid;
@@ -238,7 +243,7 @@ header{
     "imagen newsLetter";
     grid-template-columns: 1fr 1fr;  
     align-self: start;
-    background-color: #98c1d9;  
+    background-color: $colorFondo;  
 }
 
 .imagen{
@@ -254,8 +259,8 @@ header{
 .leyenda{
     grid-area: leyenda;
     justify-self: center;
-    background-color:#98c1d9;
-    font-family: 'Duru Sans', sans-serif;
+    background-color:$colorFondo;
+    font-family: $texto;
     text-align: justify;
     font-size: 18px;
     padding: 5px;
@@ -265,9 +270,10 @@ header{
 .local{
     grid-area: local;
     justify-self: center;
-    font-family: 'Duru Sans', sans-serif;
+    font-family: $texto;
     text-align: center;
     font-weight: bold;
+    margin-top: 5px;
 }
 
 .formContacto{
@@ -287,7 +293,6 @@ header{
     justify-self: center;
     margin-top: 10px;
 }
-
 
 /*Media*/
 
