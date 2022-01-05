@@ -5,6 +5,10 @@
     <link rel="stylesheet" href="../css/destino.css"/>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Keywords SEO-->
+    <meta name="keywords" content="Papeleria, Milo, Contacto, Telefono, Locales">
+    <!--Description SEO-->
+    <meta name="description" content="Pagina web de contacto de Milo Papeleria">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Duru+Sans&display=swap" rel="stylesheet">  
@@ -78,17 +82,21 @@
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
             </div>
             <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="../img/papeleria.jpg" class="d-block w-100" alt="papeleria">
-                </div>
-                <div class="carousel-item">
-                  <img src="../img/juguetes.JPG" class="d-block w-100" alt="juguetes">
-                </div>
-                <div class="carousel-item">
-                  <img src="../img/mochila.JPG" class="d-block w-100" alt="mochila">
-                </div>
+              <div class="carousel-item active">
+                <img src="../img/papeleria.jpg" class="d-block w-100" alt="papeleria">
+              </div>
+              <div class="carousel-item">
+                <img src="../img/juguetes.JPG" class="d-block w-100" alt="juguetes">
+              </div>
+              <div class="carousel-item">
+                <img src="../img/Pokemon.JPG" class="d-block w-100" alt="Pokemon">
+              </div>
+              <div class="carousel-item">
+                <img src="../img/Spiderman.JPG" class="d-block w-100" alt="Spiderman">
+              </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -115,9 +123,9 @@
                             <fieldset>
                                 <legend> Formulario de contacto </legend>
                                 <label for="nombre"> Nombre: </label>
-                                <input type="text" name="nombre"> <br>
+                                <input type="text" name="nombre" class = "barra"> <br>
                                 <label for="telefono"> Telefono: </label>
-                                <input type="telefono"  name="telefono"> <br>
+                                <input type="telefono"  name="telefono" class = "barra"> <br>
                                 <hr>
                                 <select name="consulta">
                                     <option value="">Tipo de consulta</option>
@@ -132,8 +140,8 @@
                                 <div>Acepta los terminos y condiciones</div>
                                 <input type="checkbox" name="acepta" value="1">
                                 <hr>
-                                <input type="submit" value="Enviar">
-                                <input type="reset" value="Resetear">
+                                <a href="" class="btn btn-primary btn-lg active btn-sm" role="button" aria-pressed="true">Enviar</a>
+                                <a href="" class="btn btn-secondary btn-lg active btn-sm" role="button" aria-pressed="true">Resetear</a>
                             </fieldset>
                         </form>
                     </div>

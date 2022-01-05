@@ -10,7 +10,8 @@ h1 {
   animation-name: aparecer; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: snow; }
 
 /*Se le agrega color al menu*/
 .menu {
@@ -67,29 +68,30 @@ nav ul {
 
 nav ul li {
   list-style-type: none;
-  background-color: #d7dddf;
+  background-color: #5b6369;
+  border-color: #626a72;
+  color: snow;
   padding: 10px;
   margin: 10px;
   font-family: 'Duru Sans', sans-serif;
-  border-radius: 10px;
-  font-size: 16px;
+  border-radius: 5px;
+  font-size: 14px;
   flex-direction: column;
-  font-weight: bold; }
+   }
 
 nav ul li:hover {
   list-style-type: none;
-  background-color: #FBF46D;
+  background-color:  #eee649;
   padding: 10px;
   margin: 10px;
   font-family: 'Duru Sans', sans-serif;
-  border-radius: 10px;
-  font-size: 16px;
-  flex-direction: column;
-  font-weight: bold; }
+  border-radius: 5px;
+  font-size: 14px;
+  flex-direction: column; }
 
 nav ul ul {
   display: none;
-  border-radius: 10px; }
+  border-radius: 5px; }
 
 nav ul li:hover ul {
   display: flex;
@@ -107,21 +109,19 @@ article div {
   margin-bottom: 10px; }
 
 .barra {
-  width: 400px;
-  border-radius: 10px;
-  height: 4vh;
-  transition: height 2s; }
-
-.barra:focus {
-  width: 600px;
-  border-radius: 10px;
-  height: 6vh;
-  font-size: 24px; }
+  width: 350px;
+  border-radius: 5px;
+  height: 4vh; }
 
 .botonBusqueda {
   width: 100px;
-  border-radius: 10px;
-  height: 5vh; }
+  border-radius: 4px;
+  background-color: #5b6369;
+  border-color: #626a72;
+  height: 4vh;
+  color: snow; 
+}
+  
 
 .menuInicial {
   display: flex;
@@ -173,13 +173,17 @@ header {
 
 .grid {
   display: grid;
-  grid-template-areas: "local local" "contacto contacto" "login login" "registro registro";
+  grid-template-areas: "local local"
+ "contacto contacto"
+ "login login"
+ "registro registro";
   grid-template-columns: 1fr 1fr;
   background-color: #98c1d9; }
 
 .gridMain {
   display: grid;
-  grid-template-areas: "leyenda leyenda" "imagen newsLetter";
+  grid-template-areas: "leyenda leyenda"
+ "imagen newsLetter";
   grid-template-columns: 1fr 1fr;
   align-self: start;
   background-color: #98c1d9; }
@@ -195,7 +199,7 @@ header {
 .leyenda {
   grid-area: leyenda;
   justify-self: center;
-  background-color: #98c1d9;
+  
   font-family: "Duru Sans", sans-serif;
   text-align: justify;
   font-size: 18px;
@@ -236,12 +240,17 @@ header {
     grid-template-columns: 1fr; }
   .grid {
     display: grid;
-    grid-template-areas: "local" "contacto" "login" "registro";
+    grid-template-areas: "local"
+ "contacto"
+ "login"
+ "registro";
     grid-template-columns: 1fr;
     align-self: start; }
   .gridMain {
     display: grid;
-    grid-template-areas: "leyenda" "imagen" "newsLetter";
+    grid-template-areas: "leyenda"
+ "imagen"
+ "newsLetter";
     grid-template-columns: 1fr;
     align-self: start; } }
 
@@ -253,12 +262,17 @@ header {
     grid-template-columns: 1fr; }
   .grid {
     display: grid;
-    grid-template-areas: "local" "contacto" "login" "registro";
+    grid-template-areas: "local"
+ "contacto"
+ "login"
+ "registro";
     grid-template-columns: 1fr;
     align-self: start; }
   .gridMain {
     display: grid;
-    grid-template-areas: "leyenda" "imagen" "newsLetter";
+    grid-template-areas: "leyenda"
+ "imagen"
+ "newsLetter";
     grid-template-columns: 1fr;
     align-self: start; } }
 
@@ -267,12 +281,17 @@ header {
     grid-template-columns: 1fr; }
   .grid {
     display: grid;
-    grid-template-areas: "local" "contacto" "login" "registro";
+    grid-template-areas: "local"
+ "contacto"
+ "login"
+ "registro";
     grid-template-columns: 1fr;
     align-self: start; }
   .gridMain {
     display: grid;
-    grid-template-areas: "leyenda" "imagen" "newsLetter";
+    grid-template-areas: "leyenda"
+ "imagen"
+ "newsLetter";
     grid-template-columns: 1fr;
     align-self: start; } }
 
